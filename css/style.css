@@ -1,0 +1,42 @@
+.tab-pane { padding: 0 15px; }
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+h2 { 
+  margin: 40px 0 20px 0;
+}
+
+.preface {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.countdown-container {
+  margin-top: 30px;
+  color: #329CFC; 
+}
+.countdown-container > .countdown {
+}
+
+.icon { text-align: center; }
+.icon i { font-size: 92px; }
+
+.instruction { 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btn-play {
+  width: 100%;
+  padding: 15px;
+  background-color: #329CFC;
+  border: 0;
+}
+
+.btn-play i { font-size: 42px; }
