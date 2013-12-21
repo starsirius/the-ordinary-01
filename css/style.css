@@ -103,6 +103,19 @@ strong {
 .countdown-container > .countdown {
 }
 
+.need {
+  margin: 30px 0;
+  padding-left: 10px;
+  font-size: 24px;
+  color: #666;
+}
+.need li {
+  margin-bottom: 5px;
+}
+.need li > i {
+  margin-right: 5px;
+}
+
 .icon { text-align: center; }
 .icon i { font-size: 92px; }
 
