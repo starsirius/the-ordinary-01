@@ -38,7 +38,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#coming-soon" data-toggle="tab">Go</a></li>
+            <li class="active"><a href="#go" data-toggle="tab">Go</a></li>
             <!--<li><a href="#my-path" data-toggle="tab">My Path</a></li>-->
             <li><a href="#mission" data-toggle="tab">Mission</a></li>
             <li><a href="#about" data-toggle="tab">About</a></li>
@@ -70,19 +70,30 @@
                 <div class="icon"></div>
                 <h1></h1>
                 <p class="instruction">對於每天走在一樣的路徑，看一樣的風景感到乏味嗎？<br>一樣的起點，不一樣的經驗，未知的終點。<br>請戴起耳機，按下播放，開始今天的小冒險吧！</p>
-                <a class="btn btn-lg btn-primary btn-play" href="#" role="button">開始</a>
+                <a class="btn btn-lg btn-primary btn-next" href="#" role="button">開始</a>
                 </p>
               </div>
               <div id="step-1" class="step">
                 <div class="icon"><i class="icon-left-turn"></i></div>
                 <p class="instruction">抵達路口交接處後請向右轉，並向前方直行</p>
-                <a class="btn btn-lg btn-primary btn-play" href="#" role="button"><i class="icon-play"></i></a>
+                <audio preload="auto" controls width="100%" height="auto">
+                  <source type="audio/mpeg" src="http://translate.google.com/translate_tts?tl=zh-TW&q=請於第一個路口右轉，直走五分鐘">
+                </audio>
+                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
                 </p>
               </div>
               <div id="step-2" class="step">
                 <div class="icon"><i class="icon-right-turn"></i></div>
                 <p class="instruction">抵達路口交接處後請向右轉，並向前方直行</p>
-                <a class="btn btn-lg btn-primary btn-play" href="#" role="button"><i class="icon-play"></i></a>
+                <audio preload="auto" controls width="100%" height="auto">
+                  <source type="audio/mpeg" src="http://translate.google.com/translate_tts?tl=zh-TW&q=請於第一個路口右轉，直走五分鐘">
+                </audio>
+                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
+                </p>
+              </div>
+              <div id="step-n" class="step">
+                <div class="icon"><i class="icon-camera"></i></div>
+                <p class="instruction">請拍照上傳至 Instagram</p>
                 </p>
               </div>
             </div>
@@ -153,10 +164,37 @@ The Ordinary #1 (平常習慣01) 是一個實驗性的行為藝術計劃。本�
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.jcountdown.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
     <script>
-      $("#countdown").countdown({
-        date: "december 28, 2013 12:00"
-      });
+      (function($) {
+        $("#countdown").countdown({
+          date: "december 28, 2013 12:00"
+        });
+        $('audio').mediaelementplayer({
+          //audioWidth: 400,
+          //audioHeight: 30, 
+          features: ['playpause'], 
+          alwaysShowControls: true, 
+          iPadUseNativeControls: false,
+          iPhoneUseNativeControls: false,
+          AndroidUseNativeControls: false, 
+          success: function(mediaElement, domObject, player) {
+            var $buttonPlay = $(player.controls).find(".mejs-playpause-button > button"), 
+                $buttonNext = $(player.container).closest(".step").find(".btn-next");
+            $buttonPlay.addClass("icon-play");
+            $(mediaElement).on("playing", function() {
+              $buttonPlay.removeClass("icon-play").addClass("icon-pause");
+            });
+            $(mediaElement).on("pause ended", function() {
+              $buttonPlay.removeClass("icon-pause").addClass("icon-play");
+            });
+            $(mediaElement).on("ended", function() {
+              $buttonPlay.addClass("btn-secondary");
+              $buttonNext.removeClass("hidden");
+            });
+          }
+        });
+      })(jQuery);
     </script>
   </body>
 </html>

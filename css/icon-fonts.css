@@ -47,3 +47,6 @@
 .icon-mobile:before {
 	content: "\e607";
 }
+.icon-pause:before {
+        content: "\e608";
+}

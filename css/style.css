@@ -124,11 +124,31 @@ strong {
   text-align: center;
 }
 
-.btn-play {
+.mejs-controls 
+> .mejs-playpause-button 
+> button, 
+.btn-next { 
   width: 100%;
   padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid transparent;
   background-color: #329CFC;
-  border: 0;
+  font-size: 42px;
+  color: white;
+  outline: 0;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
 }
 
-.btn-play i { font-size: 42px; }
+.btn-next {
+  font-size: 32px;
+}
+
+.mejs-controls
+> .mejs-playpause-button
+> button.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #329CFC;
+  color: #329CFC;
+}
