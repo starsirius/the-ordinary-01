@@ -39,7 +39,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#go" data-toggle="tab">Go</a></li>
-            <!--<li><a href="#my-path" data-toggle="tab">My Path</a></li>-->
+            <li><a href="#my-path" data-toggle="tab">My Path</a></li>
             <li><a href="#mission" data-toggle="tab">Mission</a></li>
             <li><a href="#about" data-toggle="tab">About</a></li>
             <li><a href="mailto:artsy.tlu@gmail.com">Contact</a></li>
@@ -104,6 +104,7 @@
         <div id="my-path" class="tab-pane">
           <h2>My Path</h2>
           <div>對於每天走在一樣的路徑，看一樣的風景感到乏味嗎？</div>
+          <div id="gallery"></div>
         </div>
 
         <!-- Mission -->
@@ -165,6 +166,7 @@ The Ordinary #1 (平常習慣01) 是一個實驗性的行為藝術計劃。本�
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.jcountdown.js"></script>
     <script src="js/mediaelement-and-player.min.js"></script>
+    <script src="js/instafeed.min.js"></script>
     <script>
       (function($) {
         $("#countdown").countdown({
@@ -194,6 +196,21 @@ The Ordinary #1 (平常習慣01) 是一個實驗性的行為藝術計劃。本�
             });
           }
         });
+
+        // Instagram
+        var feed = new Instafeed({
+          get       : 'tagged',
+          tagName   : 'dog',
+          clientId  : '8738482a23134b12a365afc165e722fb',
+          target    : 'gallery', 
+          template  : '<a class="" href="{{link}}"><img src="{{image}}"></a>', 
+          limit     : 60, 
+          success   : function(data) {
+            console.log(data);
+          }
+        });
+        feed.run();
+
       })(jQuery);
     </script>
   </body>
