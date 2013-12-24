@@ -12,6 +12,7 @@
     $("#countdown").countdown({
         date: "december 28, 2013 12:00"
     });
+
     $('audio').mediaelementplayer({
         //audioWidth: 400,
         //audioHeight: 30, 
@@ -33,6 +34,22 @@
             $(mediaElement).on("ended", function() {
                 $buttonPlay.addClass("btn-secondary");
                 $buttonNext.removeClass("hidden");
+            });
+        }
+    });
+
+    /******************
+     * Steps transition
+     ******************/
+    $('.step').each(function(index) {
+        var $btnNext = $(this).find('.btn-next'), 
+            $self = $(this), $next = $self.next();
+
+        if (index > 0) $self.hide();
+        if ($next.length > 0) {
+            $btnNext.click(function(){
+                $self.hide();
+                $next.show();
             });
         }
     });
