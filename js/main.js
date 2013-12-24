@@ -45,7 +45,7 @@
         var $btnNext = $(this).find('.btn-next'), 
             $self = $(this), $next = $self.next();
 
-        if (index > 0) $self.hide();
+        //if (index > 0) $self.hide();
         if ($next.length > 0) {
             $btnNext.click(function(){
                 $self.hide();
@@ -53,6 +53,19 @@
             });
         }
     });
+
+    /******************
+     * Device specific
+     ******************/
+    // Display customized UI for better mobile UX.
+    var isIOS = /(iPad|iPhone|iPod)/g.test(navigator.userAgent), 
+        isAndroid = /(Android)/g.test(navigator.userAgent);
+
+    if (isIOS) {
+        $('.btn-pic-ios').show();
+    } else if (isAndroid) {
+        $('.btn-pic-android').show();
+    } else {} 
 
     // Instagram
     var tagName    = 'taiwan',
