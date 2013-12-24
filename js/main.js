@@ -45,7 +45,7 @@
         var $btnNext = $(this).find('.btn-next'), 
             $self = $(this), $next = $self.next();
 
-        //if (index > 0) $self.hide();
+        if (index > 0) $self.hide();
         if ($next.length > 0) {
             $btnNext.click(function(){
                 $self.hide();
