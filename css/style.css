@@ -110,13 +110,20 @@ strong {
   text-align: center;
   font-size: 16px;
   letter-spacing: 1px;
+  margin-bottom: 40px;
 }
 
 .countdown-container {
-  margin-top: 30px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
   color: #329CFC; 
 }
-.countdown-container > .countdown {
+
+h1, .preface, .action {
+  position: relative;
+  top: -50px;
+  opacity: 0;
 }
 
 .need {

@@ -35,11 +35,11 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#coming-soon" data-toggle="tab">The Ordinary #1</a><br>
+            <a class="navbar-brand" href="#home" data-toggle="tab">The Ordinary #1</a><br>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#go" data-toggle="tab">參與計劃</a></li>
+              <li id="menu-go" class="hidden"><a href="#go" data-toggle="tab">參與計劃</a></li>
               <li><a href="#my-path" data-toggle="tab">分享</a></li>
               <li><a href="#mission" data-toggle="tab">任務說明</a></li>
               <li><a href="#about" data-toggle="tab">緣起</a></li>
@@ -51,15 +51,24 @@
         <!-- Main content -->
         <div class="tab-content">
           <!-- Coming soon -->
-          <div id="coming-soon" class="tab-pane active">
+          <div id="home" class="tab-pane active">
             <h1>用我的〈平常習慣〉<br>交換你的〈&nbsp;&nbsp;&nbsp;〉</h2>
             <div class="preface">
-              <p>給你⼀條對我來說平常不過的路徑</p>
-              <p>讓你來探索它的過程與終點</p>
-              <div class="countdown-container">
-                <p>距離活動開始</p>
-                <div id="countdown" class="countdown"></div>
-              </div>
+                <p>給你⼀條對我來說平常不過的路徑</p>
+                <p>讓你來探索它的過程與終點</p>
+            </div>
+            <div class="action">
+                <div id="coming-soon" class="countdown-container">
+                    <p>距離活動開始</p>
+                    <div id="countdown" class="countdown"></div>
+                </div>
+                <div id="participate" class="hidden">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+                            <a class="btn btn-lg btn-primary btn-next btn-participate" href="#" role="button">參與計劃</a>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
 

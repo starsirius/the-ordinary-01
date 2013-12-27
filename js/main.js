@@ -9,8 +9,17 @@
 (function($) {
     "use strict";
 
+    /******************
+     * Event countdown
+     ******************/
     $("#countdown").countdown({
-        date: "december 28, 2013 12:00"
+        // Until Dec. 28 2013, 12:00pm Taipei local time
+        date: "2013-12-28T12:00:00.000+08:00",
+        onComplete: function() {
+            $('#coming-soon').removeClass('show').addClass('hidden');
+            $('#participate').removeClass('hidden').addClass('show');
+            $('#menu-go').removeClass('hidden').addClass('show');
+        }
     });
 
     $('audio').mediaelementplayer({
@@ -39,7 +48,7 @@
     });
 
     /******************
-     * Navbar interaction
+     * Better interaction
      ******************/
     // Collapse the menu on mobile after clicking
     $('[data-toggle=tab]').click(function() {
@@ -48,6 +57,16 @@
           $collapsable.collapse('hide');
         }
     });
+    
+    // Activate tab items when navigated from separate links
+    $('.btn-participate').click(function() {
+        $('a[data-toggle="tab"][href="#go"]').tab('show');
+    });
+
+    // Fade in home page preface and action for better UX
+    $("h1").delay(300).animate({ opacity: 1, top: 0 }, 700);
+    $(".preface").delay(500).animate({ opacity: 1, top: 0 }, 700);
+    $(".action").delay(1000).animate({ opacity: 1, top: 0 }, 700);
 
     /******************
      * Steps transition
