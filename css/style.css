@@ -117,11 +117,15 @@ strong {
 }
 
 .icon { text-align: center; }
-.icon i { font-size: 92px; }
+.icon i {
+  font-size: 120px;
+  line-height: 150px;
+}
 
 .instruction { 
   margin-bottom: 20px;
   text-align: center;
+  font-size: 18px;
 }
 
 .mejs-controls 
