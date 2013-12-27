@@ -90,6 +90,9 @@ strong {
 
 .tab-pane { padding: 0 15px; }
 
+.navbar-default .navbar-toggle { border-color: #aaa; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #aaa; }
+
 .preface {
   text-align: center;
   font-size: 16px;
@@ -118,14 +121,14 @@ strong {
 
 .icon { text-align: center; }
 .icon i {
-  font-size: 120px;
-  line-height: 150px;
+  font-size: 100px;
+  line-height: 120px;
 }
 
 .instruction { 
   margin-bottom: 20px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .mejs-controls 
