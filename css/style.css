@@ -90,6 +90,7 @@ strong {
 
 .tab-pane { padding: 0 15px; }
 
+.navbar-default { background-color: #ddd; color: #808080; }
 .navbar-default .navbar-toggle { border-color: #aaa; }
 .navbar-default .navbar-toggle .icon-bar { background-color: #aaa; }
 
@@ -183,6 +184,15 @@ strong {
 
 .view-more-container {
   margin: 20px 0;
+}
+
+.footer {
+  background-color: #ddd;
+  border-top: 10px solid #f2f2f2;
+  padding: 15px;
+  margin-top: 70px;
+  color: #808080;
+  font-size: 11px;
 }
 
 .gallery-item {
