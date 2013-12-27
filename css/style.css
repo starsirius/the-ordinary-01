@@ -198,14 +198,24 @@ strong {
   margin: 20px 0;
 }
 
+html, body, .container { height: 100% }
+.above-footer {
+  min-height: 100%;
+  height: auto !important; /* min-height hack for IE6 */
+  height: 100%;            /* min-height hack for IE6 */
+  margin: 0 auto -150px;
+}
+
 .footer {
   background-color: #ddd;
   border-top: 10px solid #eee;
   padding: 15px;
-  margin-top: 70px;
   color: #808080;
   font-size: 11px;
 }
+
+.push { height: 180px; }
+.footer { height: 150px; }
 
 .gallery-item {
   width: 15%;

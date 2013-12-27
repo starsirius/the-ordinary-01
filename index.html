@@ -25,175 +25,178 @@
 
     <div class="container">
 
-      <!-- Static navbar -->
-      <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#coming-soon" data-toggle="tab">The Ordinary #1</a><br>
+      <div class="above-footer">
+        <!-- Static navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#coming-soon" data-toggle="tab">The Ordinary #1</a><br>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#go" data-toggle="tab">參與計劃</a></li>
+              <li><a href="#my-path" data-toggle="tab">分享</a></li>
+              <li><a href="#mission" data-toggle="tab">任務說明</a></li>
+              <li><a href="#about" data-toggle="tab">緣起</a></li>
+              <li><a href="mailto:artsy.tlu@gmail.com">聯絡</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#go" data-toggle="tab">參與計劃</a></li>
-            <li><a href="#my-path" data-toggle="tab">分享</a></li>
-            <li><a href="#mission" data-toggle="tab">任務說明</a></li>
-            <li><a href="#about" data-toggle="tab">緣起</a></li>
-            <li><a href="mailto:artsy.tlu@gmail.com">聯絡</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
 
-      <!-- Main content -->
-      <div class="tab-content">
-        <!-- Coming soon -->
-        <div id="coming-soon" class="tab-pane active">
-          <h1>用我的〈平常習慣〉<br>交換你的〈&nbsp;&nbsp;&nbsp;〉</h2>
-          <div class="preface">
-            <p>給你⼀條對我來說平常不過的路徑</p>
-            <p>讓你來探索它的過程與終點</p>
-            <div class="countdown-container">
-              <p>距離活動開始</p>
-              <div id="countdown" class="countdown"></div>
+        <!-- Main content -->
+        <div class="tab-content">
+          <!-- Coming soon -->
+          <div id="coming-soon" class="tab-pane active">
+            <h1>用我的〈平常習慣〉<br>交換你的〈&nbsp;&nbsp;&nbsp;〉</h2>
+            <div class="preface">
+              <p>給你⼀條對我來說平常不過的路徑</p>
+              <p>讓你來探索它的過程與終點</p>
+              <div class="countdown-container">
+                <p>距離活動開始</p>
+                <div id="countdown" class="countdown"></div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Go -->
-        <div id="go" class="tab-pane">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
-              <div id="step-0" class="step">
-                <div class="icon"></div>
-                <p class="instruction">對於每天走在一樣的路徑，<br>看一樣的風景感到乏味嗎？</p>
-                <p class="instruction">一樣的起點，不一樣的經驗，<br>未知的終點。</p>
-                <p class="instruction">請戴起耳機，按下播放，<br>開始今天的小冒險吧！</p>
-                <a class="btn btn-lg btn-primary btn-next" href="#" role="button">開始</a>
-                </p>
-              </div>
-              <div id="step-1" class="step">
-                <div class="icon"><i class="icon-left-turn"></i></div>
-                <p class="instruction">出了大門之後左轉，<br>至第一個路口處。</p>
-                <audio preload="auto" controls width="100%" height="auto">
+          <!-- Go -->
+          <div id="go" class="tab-pane">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
+                <div id="step-0" class="step">
+                  <div class="icon"></div>
+                  <p class="instruction">對於每天走在一樣的路徑，<br>看一樣的風景感到乏味嗎？</p>
+                  <p class="instruction">一樣的起點，不一樣的經驗，<br>未知的終點。</p>
+                  <p class="instruction">請戴起耳機，按下播放，<br>開始今天的小冒險吧！</p>
+                  <a class="btn btn-lg btn-primary btn-next" href="#" role="button">開始</a>
+                  </p>
+                </div>
+                <div id="step-1" class="step">
+                  <div class="icon"><i class="icon-left-turn"></i></div>
+                  <p class="instruction">出了大門之後左轉，<br>至第一個路口處。</p>
+                  <audio preload="auto" controls width="100%" height="auto">
                   <source type="audio/mpeg" src="audio/step01.mp3">
-                </audio>
-                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
-                </p>
-              </div>
-              <div id="step-2" class="step">
-                <div class="icon"><i class="icon-left-turn"></i></div>
-                <p class="instruction">抵達路口之後向左轉，<br>再前進至下一個路口。</p>
-                <audio preload="auto" controls width="100%" height="auto">
+                  </audio>
+                  <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
+                  </p>
+                </div>
+                <div id="step-2" class="step">
+                  <div class="icon"><i class="icon-left-turn"></i></div>
+                  <p class="instruction">抵達路口之後向左轉，<br>再前進至下一個路口。</p>
+                  <audio preload="auto" controls width="100%" height="auto">
                   <source type="audio/mpeg" src="audio/step02.mp3">
-                </audio>
-                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
-                </p>
-              </div>
-              <div id="step-3" class="step">
-                <div class="icon"><i class="icon-right-turn"></i></div>
-                <p class="instruction">抵達路口之後再向右轉，<br>繼續往前方直走至下一個路口。</p>
-                <audio preload="auto" controls width="100%" height="auto">
+                  </audio>
+                  <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
+                  </p>
+                </div>
+                <div id="step-3" class="step">
+                  <div class="icon"><i class="icon-right-turn"></i></div>
+                  <p class="instruction">抵達路口之後再向右轉，<br>繼續往前方直走至下一個路口。</p>
+                  <audio preload="auto" controls width="100%" height="auto">
                   <source type="audio/mpeg" src="audio/step03.mp3">
-                </audio>
-                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
-                </p>
-              </div>
-              <div id="step-4" class="step">
-                <div class="icon"><i class="icon-arrow-up"></i></div>
-                <p class="instruction">抵達路口之後繼續往前直走，<br>到第三個路口為止。</p>
-                <audio preload="auto" controls width="100%" height="auto">
+                  </audio>
+                  <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
+                  </p>
+                </div>
+                <div id="step-4" class="step">
+                  <div class="icon"><i class="icon-arrow-up"></i></div>
+                  <p class="instruction">抵達路口之後繼續往前直走，<br>到第三個路口為止。</p>
+                  <audio preload="auto" controls width="100%" height="auto">
                   <source type="audio/mpeg" src="audio/step04.mp3">
-                </audio>
-                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
-                </p>
-              </div>
-              <div id="step-5" class="step">
-                <div class="icon"><i class="icon-left-turn"></i></div>
-                <p class="instruction">抵達路口之後向左轉，<br>直走至下一個路口。</p>
-                <audio preload="auto" controls width="100%" height="auto">
+                  </audio>
+                  <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
+                  </p>
+                </div>
+                <div id="step-5" class="step">
+                  <div class="icon"><i class="icon-left-turn"></i></div>
+                  <p class="instruction">抵達路口之後向左轉，<br>直走至下一個路口。</p>
+                  <audio preload="auto" controls width="100%" height="auto">
                   <source type="audio/mpeg" src="audio/step05.mp3">
-                </audio>
-                <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
-                </p>
-              </div>
-              <div id="step-n" class="step">
-                <div class="icon"><i class="icon-camera"></i></div>
-                <p class="instruction">抵達目的地！<br>請使用手機拍下你眼前的景致，上傳至 Instagram ，並輸入 <strong>#theordinary01</strong></p>
-                <p class="instruction">別忘了到<a href="#">活動相簿</a>看看你的分享喔！</p>
-                <a class="btn btn-lg btn-primary btn-pic-ios" href="instagram://camera" role="button" style="display: none;">拍照</a>
-                <div class="btn btn-lg btn-primary btn-pic-android" style="display: none;">
+                  </audio>
+                  <a class="btn btn-lg btn-primary btn-next hidden" href="#" role="button">下一步</a>
+                  </p>
+                </div>
+                <div id="step-n" class="step">
+                  <div class="icon"><i class="icon-camera"></i></div>
+                  <p class="instruction">抵達目的地！<br>請使用手機拍下你眼前的景致，上傳至 Instagram ，並輸入 <strong>#theordinary01</strong></p>
+                  <p class="instruction">別忘了到<a href="#">活動相簿</a>看看你的分享喔！</p>
+                  <a class="btn btn-lg btn-primary btn-pic-ios" href="instagram://camera" role="button" style="display: none;">拍照</a>
+                  <div class="btn btn-lg btn-primary btn-pic-android" style="display: none;">
                     拍照
                     <input type="file" accept="image/*;capture=camera">
+                  </div>
+                  </p>
                 </div>
-                </p>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- My Path -->
-        <div id="my-path" class="tab-pane">
-          <h2><span>分享</span></h2>
-          <div class="gallery-desc">
-            <p>目前共有 <strong><span id="media_count"></span></strong> 張標記 <strong>&#35;<span id="hash_tag"></span></strong> 的照片上傳至 Instagram！<a href="#" data-target="#go" data-toggle="tab">馬上參與！</a></p>
+          <!-- My Path -->
+          <div id="my-path" class="tab-pane">
+            <h2><span>分享</span></h2>
+            <div class="gallery-desc">
+              <p>目前共有 <strong><span id="media_count"></span></strong> 張標記 <strong>&#35;<span id="hash_tag"></span></strong> 的照片上傳至 Instagram！<a href="#" data-target="#go" data-toggle="tab">馬上參與！</a></p>
+            </div>
+            <div id="gallery" class="clearfix"></div>
+            <p class="view-more-container"><a id="view-more" href="#" data-api-url="">更多照片</a></p>
           </div>
-          <div id="gallery" class="clearfix"></div>
-          <p class="view-more-container"><a id="view-more" href="#" data-api-url="">更多照片</a></p>
-        </div>
 
-        <!-- Mission -->
-        <div id="mission" class="tab-pane">
-          <h2><span>任務說明</span></h2>
-          <div>
-            <p>
-            想參與此計劃，你必須是一個
-            (1) 勇於嘗鮮的冒險者，(2) 喜愛觀察身邊細微事物的社會觀察者，以及 (3) 樂於分享新發現給朋友的快樂散播者。
-            </p>
-            <p>
-            參與本計劃，你會需要準備：
-            <ol class="list-unstyled need">
-              <li><i class="icon-mobile"></i> 一隻可以上網及照相的手機</li>
-              <li><i class="icon-headphones"></i> 一副耳機</li>
-              <li><i class="icon-instagram"></i> 個人的 Instagram 帳號</li>
-            </ol>
+          <!-- Mission -->
+          <div id="mission" class="tab-pane">
+            <h2><span>任務說明</span></h2>
+            <div>
+              <p>
+              想參與此計劃，你必須是一個
+              (1) 勇於嘗鮮的冒險者，(2) 喜愛觀察身邊細微事物的社會觀察者，以及 (3) 樂於分享新發現給朋友的快樂散播者。
+              </p>
+              <p>
+              參與本計劃，你會需要準備：
+              <ol class="list-unstyled need">
+                <li><i class="icon-mobile"></i> 一隻可以上網及照相的手機</li>
+                <li><i class="icon-headphones"></i> 一副耳機</li>
+                <li><i class="icon-instagram"></i> 個人的 Instagram 帳號</li>
+              </ol>
 
-            <h3>第一步</h3>
-            <p>
-            參與者請使用手機連至 <a href="http://theordinary01.com">TheOrdinary01.com</a>。
-            </p>
+              <h3>第一步</h3>
+              <p>
+              參與者請使用手機連至 <a href="http://theordinary01.com">TheOrdinary01.com</a>。
+              </p>
 
-            <h3>第二步</h3>
-            <p>
-            自行決定一個起點（最好是每天會經過的地點，例如：家/學校/公司），然後戴起耳機，播放導航開始旅程。
-            </p>
+              <h3>第二步</h3>
+              <p>
+              自行決定一個起點（最好是每天會經過的地點，例如：家/學校/公司），然後戴起耳機，播放導航開始旅程。
+              </p>
 
-            <h3>第三步</h3>
-            <p>
-            抵達目的地之後，請使用手機拍下你眼前的景色，並上傳至 Instagram 上，輸入<strong>#theordinary01</strong>。
-            </p>
-            <p>
-            Congratulations! 任務完成！接下來，你將會看到自己的分享被展至活動網站，成為<strong>用我的〈 〉交換你的〈〉</strong>展覽的一部份。
-            </p>
+              <h3>第三步</h3>
+              <p>
+              抵達目的地之後，請使用手機拍下你眼前的景色，並上傳至 Instagram 上，輸入<strong>#theordinary01</strong>。
+              </p>
+              <p>
+              Congratulations! 任務完成！接下來，你將會看到自己的分享被展至活動網站，成為<strong>用我的〈 〉交換你的〈〉</strong>展覽的一部份。
+              </p>
+            </div>
+          </div>
+
+          <div id="about" class="tab-pane">
+            <h2><span>緣起</span></h2>
+            <div>
+              <p>
+              假如，我給你一條讓你自行決定起點，卻無法預知過程與終點的路徑指示，在前方等待你的，會是什麼樣的場景？既使是你熟悉的環境，如果將你的決定權交給一個陌生人的導航，也許可以在熟悉的環境中進行一場小小的冒險。
+              </p>
+              <p>
+              <strong>The Ordinary #1 (平常習慣01) </strong>是一個實驗性的行為藝術計劃。本作品將代表藝術家參展於 用我的〈 〉交換你的〈 〉之中，並於 2013.12.21 – 2014/02/09 開放給觀眾一同參與互動。作品的理念來自於旅居紐約的藝術家，突然接到在台北的友人的展覽計劃邀約，卻因為工作關係無法返台參與整個展覽過程，因此決定製作一個橫跨兩個時空與城市，既虛擬又真實的一個行為藝術計劃參展。藝術家將每天的通勤路徑，分成數段指令，分享給在台北的陌生朋友們，讓參與者去跟隨著一段段的導航指令來探索一場未知的旅程。
+              </p>
+              <p>
+              想知道更多關於<strong>用我的〈 〉交換你的〈 〉</strong>的展覽資訊，請至<a href="http://www.artistvillage.org/" target="_blank">台北國際藝術村官網</a>查詢。
+              </p>
+            </div>
           </div>
         </div>
-
-        <div id="about" class="tab-pane">
-          <h2><span>緣起</span></h2>
-          <div>
-            <p>
-            假如，我給你一條讓你自行決定起點，卻無法預知過程與終點的路徑指示，在前方等待你的，會是什麼樣的場景？既使是你熟悉的環境，如果將你的決定權交給一個陌生人的導航，也許可以在熟悉的環境中進行一場小小的冒險。
-            </p>
-            <p>
-            <strong>The Ordinary #1 (平常習慣01) </strong>是一個實驗性的行為藝術計劃。本作品將代表藝術家參展於 用我的〈 〉交換你的〈 〉之中，並於 2013.12.21 – 2014/02/09 開放給觀眾一同參與互動。作品的理念來自於旅居紐約的藝術家，突然接到在台北的友人的展覽計劃邀約，卻因為工作關係無法返台參與整個展覽過程，因此決定製作一個橫跨兩個時空與城市，既虛擬又真實的一個行為藝術計劃參展。藝術家將每天的通勤路徑，分成數段指令，分享給在台北的陌生朋友們，讓參與者去跟隨著一段段的導航指令來探索一場未知的旅程。
-            </p>
-            <p>
-            想知道更多關於<strong>用我的〈 〉交換你的〈 〉</strong>的展覽資訊，請至<a href="http://www.artistvillage.org/" target="_blank">台北國際藝術村官網</a>查詢。
-            </p>
-          </div>
-        </div>
+        <div class="push"></div>
       </div>
 
       <footer class="footer">
