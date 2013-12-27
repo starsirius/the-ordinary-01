@@ -144,6 +144,7 @@ h1, .preface, .action {
   font-size: 100px;
   line-height: 120px;
 }
+.icon i.icon-small { font-size: 80px; }
 
 .instruction { 
   margin-bottom: 20px;
@@ -249,4 +250,8 @@ html, body, .container { height: 100% }
             border-radius: 3px;
   }
   .container { padding: 0; }
+  .btn-primary:hover {
+    background-color: #329CFC;
+    border-color: transparent;
+  }
 }
