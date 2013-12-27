@@ -219,7 +219,7 @@ html, body, .container { height: 100% }
   padding: 15px;
   color: #808080;
   font-size: 11px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .push { height: 100px; }
