@@ -62,6 +62,9 @@
     $('.btn-participate').click(function() {
         $('a[data-toggle="tab"][href="#go"]').tab('show');
     });
+    $('.btn-view-gallery').click(function() {
+        $('a[data-toggle="tab"][href="#my-path"]').tab('show');
+    });
 
     // Fade in home page preface and action for better UX
     $("h1").delay(300).animate({ opacity: 1, top: 0 }, 700);
