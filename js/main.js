@@ -39,6 +39,17 @@
     });
 
     /******************
+     * Navbar interaction
+     ******************/
+    // Collapse the menu on mobile after clicking
+    $('[data-toggle=tab]').click(function() {
+        var $collapsable = $(this).closest('.navbar-collapse');
+        if ($collapsable.hasClass('in')) {
+          $collapsable.collapse('hide');
+        }
+    });
+
+    /******************
      * Steps transition
      ******************/
     $('.step').each(function(index) {
