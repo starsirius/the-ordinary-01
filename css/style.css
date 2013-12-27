@@ -226,4 +226,5 @@ strong {
        -moz-border-radius: 3px;
             border-radius: 3px;
   }
+  .container { padding: 0; }
 }
