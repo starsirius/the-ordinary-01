@@ -68,16 +68,16 @@
     } else {} 
 
     // Instagram
-    var tagName    = 'taiwan',
-    count      = 30, 
-    clientId   = '8738482a23134b12a365afc165e722fb', 
-    baseUrl    = 'https://api.instagram.com/v1/', 
-    endpoints  = { 
-        tag: 'tags/' + tagName, 
-        recent_media_with_tag: 'tags/' + tagName + '/media/recent'
-    }, 
-    tagApiUrl  = baseUrl + endpoints.tag + '?client_id=' + clientId,
-    recentMediaWithTagApiUrl = baseUrl + endpoints.recent_media_with_tag + '?count=' + count + '&client_id=' + clientId; 
+    var tagName    = 'theordinary01',
+        count      = 30, 
+        clientId   = '8738482a23134b12a365afc165e722fb', 
+        baseUrl    = 'https://api.instagram.com/v1/', 
+        endpoints  = { 
+            tag: 'tags/' + tagName, 
+            recent_media_with_tag: 'tags/' + tagName + '/media/recent'
+        }, 
+        tagApiUrl  = baseUrl + endpoints.tag + '?client_id=' + clientId,
+        recentMediaWithTagApiUrl = baseUrl + endpoints.recent_media_with_tag + '?count=' + count + '&client_id=' + clientId; 
 
     // Get the media count first
     $.get(tagApiUrl, function(data) {
